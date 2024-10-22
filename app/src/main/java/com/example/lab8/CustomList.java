@@ -70,7 +70,10 @@ public class CustomList extends ArrayAdapter<City> {
      * This is a candidate city to remove
      */
     public void remove(City city) {
-
+        if (!cities.contains(city)) {
+            throw new IllegalArgumentException();
+        }
+        cities.remove(city);
     }
 
 }
