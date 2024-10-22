@@ -64,4 +64,13 @@ public class CustomList extends ArrayAdapter<City> {
         return cities.contains(city);
     }
 
+    /**
+     * This removes a city from the list
+     * @param city
+     * This is a candidate city to remove
+     */
+    public void remove(City city) {
+
+    }
+
 }
